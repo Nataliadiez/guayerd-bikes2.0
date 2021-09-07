@@ -1,0 +1,36 @@
+.textoProductos {
+    padding-right: 40px;
+    margin: 0;
+}
+
+.coloryuayerd {
+    color: white;
+}
+
+.todalapaj {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.img-thumbnail {
+    border: 0 !important;
+}
+
+
+.contenedor-productos {
+    background: white !important;
+    padding-top: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5em;
+}
+
+
+.linea-separadora {
+    border: solid 0px black !important;
+    width: 100% !important;
+    margin-top: 50px !important;
+    margin-bottom: 50px !important;
+}

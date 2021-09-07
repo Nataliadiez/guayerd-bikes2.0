@@ -1,0 +1,32 @@
+.lucas {
+    background-color: #ccc;
+}
+
+
+/* h2{
+    font-size: 50px !important;
+} */
+
+.mapa {
+    height: 450px !important;
+    margin: auto !important;
+    
+}
+
+.formu {
+    text-align: center;
+    margin: auto !important;
+    
+}
+
+.titulos {
+    text-align: left !important;
+    margin: auto !important;
+    font-size: 1.1em !important;
+}
+
+.boton {
+    padding-top: 4em;
+    text-align: center !important;
+}
+

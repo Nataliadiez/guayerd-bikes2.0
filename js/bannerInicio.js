@@ -19,3 +19,4 @@ datos_banner.onreadystatechange = (e) => {
     }
 }
 
+

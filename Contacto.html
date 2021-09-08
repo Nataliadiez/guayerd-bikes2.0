@@ -94,17 +94,13 @@
                     <div class="text-center m-5 ">
                         <h2 class="titulos-home">Contacto</h2>
                     </div>
-
-
-
-
-
+                    
 
 
 
                     <!-- formulario de contacto en html y css -->
 
-                    <div>
+                    <div id="formulario-completo">
                         <div class="row">
                             <div class="col-sm-2">
 
@@ -127,6 +123,13 @@
                                                 <span class="obligatorio"></span>
                                             </label>
                                         <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                                    </p>
+
+                                    <p>
+                                        <label for="telefono" class="colocar_telefono">Teléfono
+                                                <span class="obligatorio"></span>
+                                        </label>
+                                        <input type="number" name="introducir_telefono" id="telefono" required="obligatorio" placeholder="    Escribe tu telefono" >
                                     </p>
 
 
@@ -156,10 +159,10 @@
                                             </label>
                                         <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea>
                                     </p>
-                                    <div class="boton">
-                                        <button class="btn btn-primary" type="submit" name="enviar_formulario" id="enviar">
-                                                <p>Enviar</p>
-                                            </button>
+                                    <div class="boton-formulario">
+                                        <button class="boton colorBoton formaBoton" class="btn btn-primary" type="submit" name="enviar_formulario" id="enviar">
+                                                Enviar
+                                        </button>
                                     </div>
 
                                 </form>
@@ -253,6 +256,7 @@
     <script src="js/Novedades.js"></script>
     <script src="js/personalizarPagina.js"></script>
     <script src="js/codigoDescuento.js"></script>
+    <script src="./js/ValidacionFormulario.js"></script>
     <!-- Hotjar Tracking Code for https://guayerd-bikes-proyecto.vercel.app/ -->
 <!-- Hotjar Tracking Code for https://guayerd-bikes-proyecto.vercel.app/ -->
 <script>

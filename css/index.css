@@ -67,6 +67,11 @@ header{
     padding: 14%;
 }
 
+#item-carousel{
+    margin-top: 2.2%;
+    
+}
+
 #link_api {
     text-decoration: none;
     font-weight: bold;
@@ -88,16 +93,13 @@ header{
     justify-content: space-between;
     max-width: 992px;
     margin: 0 auto;
-	
-
+    
 }
 
 .nav-link {
     color:#212C65 !important;
     text-decoration: none;
 }
-
-
 
 
 
@@ -121,7 +123,6 @@ header{
     display: flex;
     margin-right: 40px;
     list-style: none;
-    
 }
 
 .nav-item {
@@ -143,10 +144,11 @@ width: max-content;
 
 
 
+
 /* DESPLEGABLE PARA PRODUCTOS */
 
 .dropdown-menu {
-    width: px !important;
+    width: 20px !important;
     
 }
 

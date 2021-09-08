@@ -117,6 +117,9 @@ p {
     left: 0;
 }
 
+header {
+    z-index: 10000;
+}
 .nav {
     display: flex;
     justify-content: space-between;

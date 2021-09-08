@@ -3,9 +3,6 @@
 }
 
 
-/* h2{
-    font-size: 50px !important;
-} */
 
 .mapa {
     height: 450px !important;
@@ -39,19 +36,8 @@
     border-radius: 7px;
     text-align: left;
     font-size: 20px;
-    outline: none;
     border: none;
 }
-
-/* #enviar {
-    background:linear-gradient(#212C65,#01a1dd,#212C65);
-    box-shadow: 5px 5px 5px black;
-    border: none;
-    border-radius: 1000px;
-    width: 10%;
-    padding: 1%;
-    font-size: 18px;
-} */
 
 
 .boton {
@@ -61,22 +47,19 @@
      padding: 12px 20px;
      font-size: 18px;
      border-radius: 40px !important;
-     background:linear-gradient(#0a4a61,#01a1dd,#01a2dd85);
-     box-shadow: 0 5px 5px #313131, 0 9px 0 #393939, 0px 9px 10px rgba(0,0,0,0.4), inset 0px 2px 9px rgba(255,255,255,0.2), inset 0 -2px 9px rgba(0,0,0,0.2);
+     background-color: rgb(17, 17, 139);
      position: relative;
-     border-bottom: 1px solid rgba(255,255,255,0.2);
      display: inline-block;
      font-family: Arial, Helvetica, sans;
-     text-shadow: 0px -1px 0px rgba(0,0,0,0.2);
      border:none;
      z-index: 1;
+     box-shadow: 3px 3px 4px grey;
     }
      
     .boton:hover {
-     box-shadow: 0 5px 5px #313131, 0 9px 0 #393939, 0px 9px 10px rgba(0,0,0,0.4), inset 0px 2px 15px rgba(255, 255, 255, 0.4), inset 0 -2px 9px rgba(0,0,0,0.2);
-    
+        background-color: rgb(20, 20, 185);
     }
-     
+
     .boton:active {
      top: 7px;
      box-shadow: 0 2px 0 #393939, 0px 4px 4px rgba(0,0,0,0.4), inset 0px 2px 5px rgba(0,0,0,0.2);
@@ -89,17 +72,21 @@
      padding-right: 25px;
     }
      
-    .colorRojo{
-     background-color: #c34747;
-     box-shadow: 0 5px 5px #853232, 0 9px 0 #5e2525, 0px 9px 10px rgba(0,0,0,0.4), inset 0px 2px 9px rgba(255,255,255,0.2), inset 0 -2px 9px rgba(0,0,0,0.2);
+
+    .error {
+        color: red;
+        
     }
-     
-    .colorRojo:hover {
-     box-shadow: 0 5px 5px #853232, 0 9px 0 #5e2525, 0px 9px 10px rgba(0,0,0,0.4), inset 0px 2px 15px rgba(255,255,255,0.4), inset 0 -2px 9px rgba(0,0,0,0.2);
+
+    .correcto {
+        border: solid 2px green;
     }
-     
-    .colorRojon:active {
-     box-shadow: 0 2px 0 #5e2525, 0px 4px 4px rgba(0,0,0,0.4), inset 0px 2px 5px rgba(0,0,0,0.2);
+
+    .errores{
+        font-size: 16px;
+        font-weight:600;
     }
 
     
+   
+   

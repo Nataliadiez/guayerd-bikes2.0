@@ -100,7 +100,7 @@
 
                     <!-- formulario de contacto en html y css -->
 
-                    <div id="formulario-completo">
+                    <div>
                         <div class="row">
                             <div class="col-sm-2">
 
@@ -108,28 +108,32 @@
                             <div class="col-sm-8">
 
 
-                                <form class="titulos" action="submeter-formulario.php" method="post">
+                                <form id="formulario-completo" class="titulos" action="submeter-formulario.php" method="post">
 
 
                                     <p>
-                                        <label for="nombre" class="colocar_nombre">Nombre
+                                        <label for="nombre" class="colocar_nombre" id="colocar_el_nombre">Nombre
                                                 <span class="obligatorio"></span>
-                                            </label>
-                                        <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                                        </label>
+
+                                        <input type="text" name="nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                                            <span id="error_name" class="errores"></span>
                                     </p>
 
                                     <p>
                                         <label for="email" class="colocar_email">Email
                                                 <span class="obligatorio"></span>
-                                            </label>
-                                        <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                                        </label>
+                                        <input type="email" name="email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                                            <span id="error_email" class="errores"></span>
                                     </p>
 
                                     <p>
                                         <label for="telefono" class="colocar_telefono">Teléfono
                                                 <span class="obligatorio"></span>
                                         </label>
-                                        <input type="number" name="introducir_telefono" id="telefono" required="obligatorio" placeholder="    Escribe tu telefono" >
+                                        <input type="number" name="telefono" id="telefono" required="obligatorio" placeholder="    Escribe tu telefono" >
+                                        <span id="error_tel" class="errores"></span>
                                     </p>
 
 
@@ -157,7 +161,8 @@
                                         <label for="mensaje" class="colocar_mensaje">Mensaje
                                                 <span class="obligatorio"></span>
                                             </label>
-                                        <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea>
+                                        <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..." onblur="validarMensaje()"></textarea>
+                                        <span id="error_mensaje" class="errores"></span>    
                                     </p>
                                     <div class="boton-formulario">
                                         <button class="boton colorBoton formaBoton" class="btn btn-primary" type="submit" name="enviar_formulario" id="enviar">

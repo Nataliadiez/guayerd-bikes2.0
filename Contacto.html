@@ -98,9 +98,9 @@
 
 
 
-                    <!-- formulario de contacto en html y css -->
+                    <!-- formulario de contacto en html y css submeter-formulario.php-->
 
-                    <div>
+                    <div id="formulario-completo">
                         <div class="row">
                             <div class="col-sm-2">
 
@@ -108,7 +108,7 @@
                             <div class="col-sm-8">
 
 
-                                <form id="formulario-completo" class="titulos" action="submeter-formulario.php" method="post">
+                                <form class="titulos" action=""id="formulario" method="post">
 
 
                                     <p>
@@ -134,6 +134,13 @@
                                         </label>
                                         <input type="number" name="telefono" id="telefono" required="obligatorio" placeholder="    Escribe tu telefono" >
                                         <span id="error_tel" class="errores"></span>
+                                    </p>
+
+                                    <p>
+                                        <label for="telefono" class="colocar_telefono">Teléfono
+                                                <span class="obligatorio"></span>
+                                        </label>
+                                        <input type="number" name="introducir_telefono" id="telefono" required="obligatorio" placeholder="    Escribe tu telefono" >
                                     </p>
 
 

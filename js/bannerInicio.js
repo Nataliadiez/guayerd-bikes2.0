@@ -13,9 +13,6 @@ datos_banner.onreadystatechange = (e) => {
         img_banner.src = datos_banner.imgUrl
         img_banner.alt = datos_banner.title
         link_banner.href = datos_banner.link
-        /* title_api.innerHTML = datos_banner.title
-        link_api.innerHTML = datos_banner.link
-        link_api.href = datos_banner.link */
         
     }
 }

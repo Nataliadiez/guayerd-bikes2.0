@@ -31,9 +31,72 @@ descuentoApi.onreadystatechange = (e) => {
     }
 }
 
+/* JS PARA GUARDAR INFO DEL NOMBRE Y DEL EMAIL */
+
+let localnombre = localStorage.getItem("nombre")
+let localemail = localStorage.getItem("email")
+let seguir1 = true
+
+if ((localStorage.getItem("nombre") != null)) {
+    seguir1 = false
+    
+}
+
+
+while (seguir1) {
+
+    let nombre = prompt("¿Desea ingresar su Nombre?")
+    let mail = prompt("¿Desea ingresar su Mail?")
+    localStorage.setItem("nombre", nombre)
+    localStorage.setItem("email", mail)
+
+    validarCorreo(mail)
+    seguir1 = false
+    
+
+}
 
 
 
+function validarCorreo(mail) {
+    var expReg = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
+    var esValido = expReg.test(mail);
+    if (esValido == true) {
+        alert("¡Gracias por sus datos!")
+
+
+    }
+}
+
+/* JS PARA RECIBIR NOVEDADES */
+
+let revisar = localStorage.getItem("ingresarNovedades")
+let seguir
+if (revisar === "si" || revisar === "no") {
+    seguir = false;
+
+} else {
+    seguir = true
+}
+while (seguir) {
+
+    let novedades = prompt("¿Desea que le enviemos novedades? \nIngrese su decision: Si/No ").toLowerCase();
+    if (novedades === "si".toLowerCase()) {
+        localStorage.setItem("ingresarNovedades", novedades);
+    }
+    if (novedades === "no".toLowerCase()) {
+        localStorage.setItem("ingresarNovedades", novedades);
+    }
+
+
+
+    let informacionlocal = localStorage.getItem("ingresarNovedades")
+
+    if (informacionlocal === "si" || informacionlocal === "no") {
+        seguir = false;
+    }
+
+}
 
 /* Swal.fire({
     title: "Bienvenido", // título de la alerta

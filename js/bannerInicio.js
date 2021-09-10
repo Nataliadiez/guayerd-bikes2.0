@@ -1,6 +1,5 @@
 const img_banner = document.querySelector("#img_banner")
-const title_api = document.querySelector("#title_api")
-const link_api = document.querySelector("#link_api")
+const link_banner = document.querySelector("#link-banner")
 
 let datos_banner = new XMLHttpRequest;
 const url = "http://demo2420474.mockable.io/getHomeBanner"
@@ -12,9 +11,11 @@ datos_banner.onreadystatechange = (e) => {
         datos_banner = JSON.parse(datos_banner.responseText)
         console.log(datos_banner)
         img_banner.src = datos_banner.imgUrl
-        title_api.innerHTML = datos_banner.title
+        img_banner.alt = datos_banner.title
+        link_banner.href = datos_banner.link
+        /* title_api.innerHTML = datos_banner.title
         link_api.innerHTML = datos_banner.link
-        link_api.href = datos_banner.link
+        link_api.href = datos_banner.link */
         
     }
 }

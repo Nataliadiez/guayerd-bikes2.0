@@ -63,30 +63,6 @@ header{
  z-index: 10000;
 }
 
-#titulos-carrousel{
-    padding: 14%;
-}
-
-#item-carousel{
-    margin-top: 2.2%;
-    
-}
-
-#link_api {
-    text-decoration: none;
-    font-weight: bold;
-    font-family: 'Roboto Condensed', sans-serif !important;
-    letter-spacing: 1.5px;
-    font-size: 20px;
-    
-}
-
-#title_api {
-    font-weight: bold;
-    font-family: 'Roboto Condensed', sans-serif !important;
-    letter-spacing: 1.5px;
-    font-size: 25px;
-}
 
 .nav {
     display: flex;
@@ -100,7 +76,6 @@ header{
     color:#212C65 !important;
     text-decoration: none;
 }
-
 
 
 /* LOGO GUAYERD BIKES */
@@ -117,6 +92,17 @@ header{
     color:#212C65 !important;
     
 }
+
+/* #img-logoguayerd{
+    border: solid 2px red;
+    width: 90% !important;
+    
+}
+
+#img_banner{
+    border: solid 2px blue;
+    width: 120% !important;
+} */
 
 /* BARRA DE NAVEGACIÓN */
 .nav-menu {
@@ -136,14 +122,10 @@ width: max-content;
 }
 
 
-
 .navbar-natt {
     padding-left: 60em;
 
 }
-
-
-
 
 /* DESPLEGABLE PARA PRODUCTOS */
 
@@ -160,11 +142,8 @@ width: max-content;
 }
 
 
-
-
 /* MODIFICACIONES EN BARRA DE NAVEGACION DE ACUERDO A LAS PANTALLAS */
 @media (max-width: 1700px) {
-
 
     .navbar-natt {
         padding-left: 58em;
@@ -261,14 +240,6 @@ width: max-content;
         
     }
 
-    #link_api {
-        font-size: 18px;
-    }
-    
-    #title_api {
-        font-size: 22px;
-    }
-    
 }
 
 @media (max-width: 1170px) {
@@ -278,13 +249,7 @@ width: max-content;
         padding-left: 28em;
         
     }
-    #link_api {
-        font-size: 16px;
-    }
     
-    #title_api {
-        font-size: 20px;
-    }
     
 }
 
@@ -295,13 +260,7 @@ width: max-content;
         padding-left: 26em;
         
     }
-    #link_api {
-        font-size: 15px;
-    }
     
-    #title_api {
-        font-size: 19px;
-    }
 }
 
 @media (max-width: 1093px) {
@@ -311,13 +270,7 @@ width: max-content;
         padding-left: 23em;
         
     }
-    #link_api {
-        font-size: 12px;
-    }
-    
-    #title_api {
-        font-size: 18px;
-    }
+   
     
 }
 
@@ -328,16 +281,8 @@ width: max-content;
         padding-left: 20em;
         
     }
-    #link_api {
-        font-size: 12px;
-    }
+   
     
-    #title_api {
-        font-size: 16px;
-    }
-    #titulos-carrousel{
-        padding: 13%;
-    }
 }
 
 @media (max-width: 1024px) {
@@ -347,15 +292,8 @@ width: max-content;
         padding-left: 18em;
         
     }
-    #link_api {
-        font-size: 14px;
-    }
     
-    #title_api {
-        font-size: 15px;
-    }
 }
-
 
 @media (max-width: 992px) {
 
@@ -373,19 +311,6 @@ width: max-content;
         
     }
 
-    #link_api {
-        font-size: 13px;
-    }
-    
-    #title_api {
-        font-size: 15px;
-    }
-    #titulos-carrousel{
-        padding: 12%;
-    }
-    #item-carousel{
-        margin-top: -15px;
-    }
     
 }
 
@@ -407,12 +332,7 @@ width: max-content;
         padding-left: 2em;
         
     }
-    #titulos-carrousel{
-        padding: 12%;
-    }
-    #item-carousel{
-        margin-top: 20px;
-    }
+    
 }
 
 @media (max-width: 800px) {
@@ -431,9 +351,7 @@ width: max-content;
         position: relative;
     }
     
-    #titulos-carrousel{
-        padding: 11%;
-    }
+    
 }
 
 
@@ -465,35 +383,8 @@ width: max-content;
         padding-left: 2em;
         
     }
-    #link_api {
-        font-size: 13px;
-    }
     
-    #title_api {
-        font-size: 15px;
-    }
-    #titulos-carrousel{
-        
-        padding: 6%;
-    }
-    
-    #item-carousel{
-        margin-top: 2px;
-    }
-
 }
-
-/* 
-@media (max-width: 440px) {
-
-    #contenedor {
-        width: 1500px !important;
-        
-    }
-
-}
- */
-
 
 
 /* Logo Guayerd */
@@ -512,7 +403,6 @@ width: max-content;
 /* Descripción del HOME */
 
 #descripcion-del-sitio {
-    padding-top: 3%;
     display: flex;
     flex-direction: column;
     color: #000000;
@@ -537,8 +427,6 @@ width: max-content;
     margin-left: 0% !important;
     
 }
-
-
 
 
 .fila {

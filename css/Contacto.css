@@ -84,7 +84,9 @@
 
     .error {
         color: red;
-        
+    }
+    .error-borde {
+        border: solid 2px red !important;
     }
 
     .correcto {

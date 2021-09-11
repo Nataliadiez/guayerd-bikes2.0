@@ -1,9 +1,9 @@
-const formulario = document.querySelector("#formulario-completo")
+const formularioCompleto = document.querySelector("#formulario-completo")
 const inputs = document.querySelectorAll("#formulario-completo input");
 const error_name = document.querySelector("#error_name")
 const error_email = document.querySelector("#error_email")
 const error_tel = document.querySelector("#error_tel")
-const mensaje = document.querySelector("#mensaje")
+const mensajeForm = document.querySelector("#mensaje")
 const error_mensaje = document.querySelector("#error_mensaje")
 const inputNombre = document.querySelector("#nombre")
 const inpuEmail = document.querySelector("#email")
@@ -64,24 +64,22 @@ inputs.forEach((input)=> {
     input.addEventListener("blur", validarFormulario)
     })
 
-formulario.addEventListener("submit", (e) => {
-    e.preventDefault();
-})
 
 const validarMensaje = () => {
-    if(mensaje.value === ""){
+    if(mensajeForm.value === ""){
         error_mensaje.innerHTML = "Este campo no puede estar vacío o tener menos de tres caracteres."
         error_mensaje.classList.add("error")
-        mensaje.classList.add("error-borde")
+        mensajeForm.classList.add("error-borde")
     } else if(mensaje.value.length <=3) {
         error_mensaje.innerHTML = "Este campo no puede estar vacío o tener menos de tres caracteres."
         error_mensaje.classList.add("error")
-        mensaje.classList.add("error-borde")
+        mensajeForm.classList.add("error-borde")
     }
     
     else {
         error_mensaje.innerHTML = ""
         error_mensaje.classList.remove("error")
-        mensaje.classList.remove("error-borde")
+        mensajeForm.classList.remove("error-borde")
     }
 }
+

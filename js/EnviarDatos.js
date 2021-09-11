@@ -10,47 +10,58 @@ Formato:
 `{name:"", email:"", phone:"",subject:"", message:""}` */
 
 
-const formulario =document.querySelector("#formulario")
+const formulario = document.querySelector("#formulario")
+const msj_form_vacio = document.querySelector("#error-formulario-vacio")
 
 
-const envio=()=>{
-
+const envio = ()=>{
+    
     nombre=document.querySelector("#nombre").value
     email=document.querySelector("#email").value
     telefono=document.querySelector("#telefono").value
     mensaje=document.querySelector("#mensaje").value
-    alert(nombre+" "+email+" \n"+mensaje+telefono)
-      usuario={
-             "name":nombre,
-             "email":email,
-             "phone":telefono,
-             "subject":"esto no se que es",
-             "message":mensaje,  
-     }
-     
-     usuario=JSON.stringify(usuario)
-     
-     setTimeout(()=>{
+    
+    if(nombre.length === 0 || email.length === 0 || telefono.length === 0 || mensaje.length === 0){
+        console.log("error, campo vacio")
+        msj_form_vacio.classList.add("errorFormularioVacio")
+        msj_form_vacio.innerHTML = "No puede haber campos vacíos al enviar el formulario."
+    } else{
+        msj_form_vacio.remove("errorFormularioVacio")
+        usuario={
+            "name":nombre,
+            "email":email,
+            "phone":telefono,
+            "subject":"esto no se que es",
+            "message":mensaje,  
+    }
+    
+    usuario=JSON.stringify(usuario)
+    
+    setTimeout(()=>{
+       
+       document.querySelector("#nombre").value=""
+       document.querySelector("#email").value=""
+       document.querySelector("#telefono").value=""
+       document.querySelector("#mensaje").value=""
         
-        document.querySelector("#nombre").value=""
-        document.querySelector("#email").value=""
-        document.querySelector("#telefono").value=""
-        document.querySelector("#mensaje").value=""
-         
-   
-    },3000)  
+  
+   },3000)  
 
-    const datos =new XMLHttpRequest()
-    const url =`https://demo2420474.mockable.io/submitForm`
-    const metodo="POST";
-    datos.open(metodo,url)
-   
-    datos.send(usuario)
+   const datos =new XMLHttpRequest()
+   const url =`https://demo2420474.mockable.io/submitForm`
+   const metodo="POST";
+   datos.open(metodo,url)
+  
+   datos.send(usuario)
+
+    }
+
+      
       
     
   
 }
 
 
-formulario.addEventListener("submit",envio)
+//formulario.addEventListener("submit",envio)
 

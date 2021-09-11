@@ -108,7 +108,7 @@
                             <div class="col-sm-8">
 
 
-                                <form class="titulos" action=""id="formulario" method="post">
+                                <form class="titulos" action="" id="formulario" method="post">
 
 
                                     <p>
@@ -163,8 +163,12 @@
                                         <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..." onblur="validarMensaje()"></textarea>
                                         <span id="error_mensaje" class="errores"></span>    
                                     </p>
+
+                                    <p>
+                                        <p id="error-formulario-vacio"></p>
+                                    </p>
                                     <div class="boton-formulario">
-                                        <button class="boton colorBoton formaBoton" class="btn btn-primary" type="submit" name="enviar_formulario" id="enviar">
+                                        <button class="boton colorBoton formaBoton" class="btn btn-primary" type="button" onclick="envio()" name="enviar_formulario" id="enviar">
                                                 Enviar
                                         </button>
                                     </div>
@@ -258,9 +262,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <!-- Validacion de formulario de contacto -->
     <script src="./js/ValidacionFormulario.js"></script>
+    <!-- Enviar datos del formulario -->
+    <script src="./js/EnviarDatos.js"></script>
     <!-- Sweet alert -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="./js/sweetalert.js"></script>
+    <script src="./js/sweetalert1.js"></script>
     <!-- Hotjar Tracking Code for https://guayerd-bikes-proyecto.vercel.app/ -->
 <!-- Hotjar Tracking Code for https://guayerd-bikes-proyecto.vercel.app/ -->
 <script>

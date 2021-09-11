@@ -29,9 +29,10 @@
         <meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
         
             <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="css/productos.css">
+            <link rel="stylesheet" href="assets/css/main.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="css/productos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
@@ -82,68 +83,11 @@
 </header>
 
 
-    <!-- aca empiezan los cuadros de foto y descripcion en secciones cada uno en una seccion-->
-    <div class="contenedor-productos">
-        <section>
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-5">
-                        <img src="imagenes/bici1.jpg" class="img-thumbnail img-responsive" alt="bici1">
-                    </div>
-                    <div class="col-1">
-
-                    </div>
-                    <div class="col-sm-5 textoProductos">
-                        <h4> Urbana Crossway 40</h4>
-                        <p>Bicicleta de competición hecha a medida con lo mejor, cuadro francés Huret talle 'M', cambios y mecánica Shimano (shifters, descarriladores), frenos Weinmann, ruedas Canestrari Super Sport 28', cubiertas Michelin Super Elan, Stem
-                            Caymot, pedales Giorgia, asiento italiano Iscaselle. La bicicleta es ultra liviana hecha especialmente para competir, tengo las punteras de los pedales y el porta-botella original, podría llegar a cambiar por una MTB.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-    </section>
-    <hr class="linea-separadora">
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-5">
-                    <img src="imagenes/bici2.jpg" class="img-thumbnail img-responsive" alt="bici1">
-                </div>
-                <div class="col-1">
-
-                    </div>
-                    <div class="col-sm-5 textoProductos">
-                        <h4>Varela Competicion Aluminio Rodado 28</h4>
-                        <p>Bicicleta de competición hecha a medida con lo mejor, cuadro francés Huret talle 'M', cambios y mecánica Shimano (shifters, descarriladores), frenos Weinmann, ruedas Canestrari Super Sport 28', cubiertas Michelin Super Elan, Stem
-                            Caymot, pedales Giorgia, asiento italiano Iscaselle. La bicicleta es ultra liviana hecha especialmente para competir, tengo las punteras de los pedales y el porta-botella original, podría llegar a cambiar por una MTB.</p>
-
-                    </div>
-                </div>
-            </div>
-
-    </section>
-    <hr class="linea-separadora">
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-5">
-                    <img src="imagenes/bici3.jpg" class="img-thumbnail img-responsive" alt="bici1">
-                </div>
-                <div class="col-1">
-
-                    </div>
-                    <div class="col-sm-5 textoProductos">
-                        <h4>Thanos Competicion Rodado 28</h4>
-                        <p>Bicicleta de competición hecha a medida con lo mejor, cuadro francés Huret talle 'M', cambios y mecánica Shimano (shifters, descarriladores), frenos Weinmann, ruedas Canestrari Super Sport 28', cubiertas Michelin Super Elan, Stem
-                            Caymot, pedales Giorgia, asiento italiano Iscaselle. La bicicleta es ultra liviana hecha especialmente para competir, tengo las punteras de los pedales y el porta-botella original, podría llegar a cambiar por una MTB.</p>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-    </div>
-
+<!-- aca empiezan los cuadros de foto y descripcion en secciones cada uno en una seccion-->
+    
+    <div class="row" id="mostrar">
+        <h2 id="titulo-bicis">Bicicletas</h2>
+    </div> 
 
 <!-- FOOTER -->
 
@@ -198,10 +142,8 @@
     <!-- Scripts -->
     <script src="https://kit.fontawesome.com/f468411da1.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="js/GuardarInfo.js"></script>
-    <script src="js/Novedades.js"></script>
-    
-    
+    <!-- Subir productos desde JS -->
+    <script src="./js/subirProductos.js"></script>
     <!-- Hotjar Tracking Code for https://guayerd-bikes-proyecto.vercel.app/ -->
 <!-- Hotjar Tracking Code for https://guayerd-bikes-proyecto.vercel.app/ -->
 <script>

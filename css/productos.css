@@ -1,36 +1,62 @@
-.textoProductos {
-    padding-right: 40px;
-    margin: 0;
+
+.card-title{
+    text-align: center;
+    font-weight: bold !important;
+    font-family: 'Roboto Condensed', sans-serif !important;
+    font-size: 140%;
 }
 
-.coloryuayerd {
-    color: white;
+.card{
+    padding: 20px;
+    margin-bottom: 5%;
+    border-radius: 20px;
 }
 
-.todalapaj {
-    width: 100%;
-    margin: 0;
-    padding: 0;
+#mostrar{
+    justify-content: space-around;
+    margin-left: 2%;
+    margin-right: 2%;
+    display: flex;
+    margin-top: 2%;
+
 }
 
-.img-thumbnail {
-    border: 0 !important;
+#boton-comprar {
+    background-color: rgb(18, 18, 126);
+    box-shadow: 2px 3px 5px rgb(124, 111, 111);
+    border-radius: 10px;
+    border: solid 2px rgb(12, 9, 49);
+    width: 20%;
 }
 
+#boton-comprar:hover{
+    background-color: rgb(58, 58, 180);
+}
 
-.contenedor-productos {
-    background: white !important;
-    padding-top: 5em;
+#valores{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding-bottom: 5em;
+    justify-content: space-between;
 }
 
+.card-text{
+    text-align: justify;
+}
 
-.linea-separadora {
-    border: solid 0px black !important;
-    width: 100% !important;
-    margin-top: 50px !important;
-    margin-bottom: 50px !important;
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.card .card-body p{
+    font-family: 'Roboto Condensed', sans-serif !important;
+    font-size: 1.1em;
+}
+
+#titulo-bicis{
+    text-align: center;
+    margin-bottom: 2%;
 }

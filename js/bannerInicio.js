@@ -9,7 +9,6 @@ datos_banner.send();
 datos_banner.onreadystatechange = (e) => {
     if(datos_banner.readyState === 4) {
         datos_banner = JSON.parse(datos_banner.responseText)
-        console.log(datos_banner)
         img_banner.src = datos_banner.imgUrl
         img_banner.alt = datos_banner.title
         link_banner.href = datos_banner.link

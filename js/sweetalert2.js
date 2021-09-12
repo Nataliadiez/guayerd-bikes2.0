@@ -1,12 +1,101 @@
-/* // JS PARA GUARDAR INFO DEL NOMBRE Y DEL EMAIL
+// JS PARA GUARDAR INFO DEL NOMBRE Y DEL EMAIL
 
+let nombreform;
+let emailform;
 let localnombre = localStorage.getItem("nombre")
+let localmail = localStorage.getItem("email")
+let localnovedades = localStorage.getItem("novedades")
+let checkboxForm;
+
+if(localnombre === null || localmail === null) {
+	const { value: formValues } = setTimeout(()=> {
+		Swal.fire({
+			title: '¡Bienvenido!',
+			html:
+				
+				'<div class="container">'+
+				'<label id="nombre-ingresado"> Ingrese su nombre </label>'+
+			  '<input type="text" id="swal-input1" class="swal2-input">' +
+			  '<label> Ingrese su email </label>'+
+			  '<input type="text" id="swal-input2" class="swal2-input">'+
+			  '<div><br></div>'+
+			  '<span><label> Deseo recibir novedades</label> <input type="checkbox" id="checkForm"></span> </div>',
+			   
+			confirmButtonText: 'Enviar',
+			width: "51%",
+			
+			backdrop: true,
+			allowOutsideClick: true,
+			allowEscapeKey: true,
+			allowEnterKey: true,
+	
+			preConfirm: () => {
+			  return [
+				checkboxForm = document.querySelector("#checkForm").checked,
+				nombreform = document.getElementById('swal-input1').value,
+				emailform = document.getElementById('swal-input2').value,
+				localStorage.setItem("nombre", nombreform),
+				localStorage.setItem("email", emailform),
+				localStorage.setItem("novedades", checkboxForm)
+				
+			  ]
+			  
+			}
+			
+		  })
+		  
+	},2000) 
+}
+
+
+
+function random() {
+	return Math.random().toString(36).substr(2); // Eliminar `0.`
+};
+ 
+function token() {
+	return random() ; // Para hacer el token más largo
+};
+
+let codToken = token()
+
+console.log(localStorage.getItem("nombre"))
+
+let name = {
+	token: codToken,
+	name: localStorage.getItem("nombre").toString(),
+	email: localStorage.getItem("email").toString(),
+	sendEmail: localStorage.getItem("novedades").toString()
+}
+
+const url_envio = "https://demo2420474.mockable.io/userData"
+const promesa_envio = new Promise((resolve,reject) => {
+	if(localStorage.getItem("nombre") !== "" || localStorage.getItem("email") !== "" || localStorage.getItem("novedades") !== false){
+		resolve() = true
+	} 
+})
+	fetch(url_envio)
+	.then ( response => response.text() )
+
+
+
+/* const caraCruz = new Promise ((resolve,reject) => {
+  moneda = Math.floor(Math.random()*2);
+  console.log(moneda)
+  moneda==0?resolve("cara"):reject("cruz")
+})
+.then( (msg)=> console.log(msg))
+.then( ()=> console.log("Gracias por jugar!"))
+.then( ()=> console.log("Que tenga buen día!")) 
+.catch( (msg)=> console.log(msg))
+.finally(()=>console.log("Gracias por jugar!"))
+
+/* let localnombre = localStorage.getItem("nombre")
 let localemail = localStorage.getItem("email")
 let seguir1 = true
 
 if ((localStorage.getItem("nombre") != null)) {
     seguir1 = false
-    
 }
 
 
@@ -65,18 +154,7 @@ while (seguir) {
 
 } */
 
-/* Swal.fire({
-    title: "Bienvenido", // título de la alerta
-    text: 'Usted ha recibido un descuento del %10 con el código "conchita"', // texto de la alerta
-    popup: 'swal2-show', //esta seria la animación del popup
-    backdrop: 'swal2-backdrop-show', //coloca el background detras de la alerta en tono más oscuro
-    icon: 'swal2-icon-show', //muestra el icono, info, error o warning
-    confirmButtonText: '¡Gracias!', // texto del bottón
-    confirmButtonColor: 'darkblue', // color del botón
-    footer: 'Recuerde utilizar el código antes de finalizar la compra.', // footer de la alerta
-    stopKeydownPropagation: false,
 
-}) */
 
 //opciones
 // title:
@@ -139,4 +217,5 @@ while (seguir) {
 	// imageAlt:
 
 
-    Swal.fire("Bienvenido")
+
+	 

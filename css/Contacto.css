@@ -14,17 +14,22 @@
 } */
 
 .mapa {
-    height: 450px !important;
     margin: auto !important;
-    
 }
 
-.formu {
-    text-align: center;
-    margin: auto !important;
-    
+#formulario{
+    background-color: rgb(217, 217, 221);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50% !important;
 }
 
+#formulario label {
+    color: black;
+}
 
 .titulos {
     text-align: left !important;

@@ -141,6 +141,23 @@ width: max-content;
     
 }
 
+/* Sweet alert */
+
+/* .swal2-input{
+    position: center;
+    margin-bottom: 30px;
+}
+
+.swal2-popup{
+    border: solid 2px red;
+    
+}
+
+.swal2-content{
+    padding: 5px;
+    overflow: hidden
+} */
+
 
 /* MODIFICACIONES EN BARRA DE NAVEGACION DE ACUERDO A LAS PANTALLAS */
 @media (max-width: 1700px) {

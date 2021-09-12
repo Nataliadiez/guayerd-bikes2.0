@@ -1,4 +1,5 @@
 // JS PARA GUARDAR INFO DEL NOMBRE Y DEL EMAIL
+//tengo que hacerlo responsive
 
 let nombreform;
 let emailform;

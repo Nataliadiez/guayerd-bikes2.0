@@ -1,7 +1,6 @@
 
-
 @import url("https://fonts.googleapis.com/css?family=Oleo+Script:400|Open+Sans:300,300italic,600,600italic,800");
-@import url("fontawesome-all.min.css");
+/* @import url("fontawesome-all.min.css"); */
 
 html, body{
     height: 100%;
@@ -148,6 +147,45 @@ header{
     flex-direction: column;
 }
 
+/* Carousel de inicio */
+
+#carouselExampleCaptions{
+    margin-top: -1%;
+}
+/* Carrito inicio */
+.shopping-cart-image{
+    width: 30%;
+    border-radius: 20px;
+}
+
+/* imagenes inicio que redirigen */
+.img-inicio {
+    width: 25%;
+    border-radius: 20px;
+}
+
+.img-inicio:hover {
+    cursor:pointer;
+    width: 30%;
+}
+#img-inflador:hover{
+    width: 16%;
+}
+
+.imagenes-inicio{
+    border-radius: 30px;
+    margin-top: 5%;
+    background-color: white;
+}
+
+#img-inflador{
+    width: 15%;
+}
+
+.imagenes-inicio h2{
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif !important;
+}
 
 /* MODIFICACIONES EN BARRA DE NAVEGACION DE ACUERDO A LAS PANTALLAS */
 @media (max-width: 1400px) {

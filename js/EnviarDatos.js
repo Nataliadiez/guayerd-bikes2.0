@@ -43,9 +43,15 @@ const envio = ()=>{
        document.querySelector("#email").value=""
        document.querySelector("#telefono").value=""
        document.querySelector("#mensaje").value=""
-        
-  
-   },3000)  
+       setTimeout(() => {
+        Swal.fire({
+            title: "Gracias por enviar tu mensaje",
+            timer: 2000,
+            confirmButtonColor: 'darkblue', // color del botón
+            icon: "success"
+       })},1000)
+   } 
+   ,3000)  
 
    const datos =new XMLHttpRequest()
    const url =`https://demo2420474.mockable.io/submitForm`

@@ -1,4 +1,5 @@
 
+
 const url="https://demo2420474.mockable.io/productList"
 fetch(url)
 .then(response=>response.json())
@@ -6,6 +7,7 @@ fetch(url)
        console.log(data)
        
        data.forEach(dato => {
+        let img_bicis_inicio = document.querySelector("#img-bicis")
         let divGeneral = document.querySelector("#mostrar")
         if(dato.discountPrice!==undefined){
             divGeneral.innerHTML+=`<div class="card col-8" style="width: 35rem;"><h5 class="card-title">${dato.title}</h5>
@@ -25,5 +27,6 @@ fetch(url)
             
           
          } 
+         
 });
 });

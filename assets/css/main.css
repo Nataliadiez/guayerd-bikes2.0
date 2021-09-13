@@ -202,7 +202,10 @@ header{
 }
 
 
-
+.infladores-img{
+    width: 80%;
+    margin-left: 10%;
+}
 
 /* MODIFICACIONES EN BARRA DE NAVEGACION DE ACUERDO A LAS PANTALLAS */
 @media (max-width: 1400px) {

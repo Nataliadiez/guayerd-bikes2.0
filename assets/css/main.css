@@ -1,6 +1,6 @@
 
 @import url("https://fonts.googleapis.com/css?family=Oleo+Script:400|Open+Sans:300,300italic,600,600italic,800");
-@import url("fontawesome-all.min.css");
+
 
 
 * {
@@ -120,21 +120,18 @@ p {
 header {
     z-index: 10000;
 }
+
 .nav {
     display: flex;
     justify-content: space-between;
     max-width: 992px;
     margin: 0 auto;
-	
-
 }
 
 .nav-link {
     color:#212C65 !important;
     text-decoration: none;
 }
-
-
 
 
 
@@ -183,7 +180,7 @@ width: max-content;
 /* DESPLEGABLE PARA PRODUCTOS */
 
 .dropdown-menu {
-    width: px !important;
+    width: 20px !important;
     
 }
 

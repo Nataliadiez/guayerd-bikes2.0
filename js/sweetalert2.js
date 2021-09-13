@@ -7,16 +7,16 @@ let localmail = localStorage.getItem("email")
 let localnovedades = localStorage.getItem("novedades")
 let checkboxForm;
 
-<<<<<<< HEAD
 if (localnombre === null || localmail === null) {
     const { value: formValues } = setTimeout(() => {
         Swal.fire({
             title: '¡Bienvenido!',
             html:
 
-                '<div class="container">' +
+                '<div class="SA-responsive">' +
                 '<label id="nombre-ingresado"> Ingrese su nombre </label>' +
                 '<input type="text" id="swal-input1" class="swal2-input">' +
+                '<div><br></div>' +
                 '<label> Ingrese su email </label>' +
                 '<input type="text" id="swal-input2" class="swal2-input">' +
                 '<div><br></div>' +
@@ -46,47 +46,6 @@ if (localnombre === null || localmail === null) {
         })
 
     }, 2000)
-=======
-if(localnombre === null || localmail === null) {
-	const { value: formValues } = setTimeout(()=> {
-		Swal.fire({
-			title: '¡Bienvenido!',
-			html:
-				
-				'<div class="SA-responsive">'+
-				'<label id="nombre-ingresado"> Ingrese su nombre </label>'+
-			  '<input type="text" id="swal-input1" class="swal2-input">' +
-			  '<div><br></div>'+
-			  '<label> Ingrese su email </label>'+
-			  '<input type="text" id="swal-input2" class="swal2-input">'+
-			  '<div><br></div>'+
-			  '<span><label> Deseo recibir novedades</label> <input type="checkbox" id="checkForm"></span> </div>',
-			   
-			confirmButtonText: 'Enviar',
-			width: "51%",
-			
-			backdrop: true,
-			allowOutsideClick: true,
-			allowEscapeKey: true,
-			allowEnterKey: true,
-	
-			preConfirm: () => {
-			  return [
-				checkboxForm = document.querySelector("#checkForm").checked,
-				nombreform = document.getElementById('swal-input1').value,
-				emailform = document.getElementById('swal-input2').value,
-				localStorage.setItem("nombre", nombreform),
-				localStorage.setItem("email", emailform),
-				localStorage.setItem("novedades", checkboxForm)
-				
-			  ]
-			  
-			}
-			
-		  })
-		  
-	},2000) 
->>>>>>> 244a531d2ae5554bf45906a51420e0f14f859b50
 }
 
 
@@ -103,7 +62,6 @@ let codToken = token()
 
 console.log(localStorage.getItem("nombre"))
 
-<<<<<<< HEAD
 
 var URL_1 = "https://demo2420474.mockable.io/userData";
 var perfil = {
@@ -111,34 +69,16 @@ var perfil = {
     name: localStorage.getItem("nombre").toString(),
     email: localStorage.getItem("email").toString(),
     sendEmail: localStorage.getItem("novedades")
-=======
-let name = {
-	token: codToken,
-	name: localStorage.getItem("nombre"),
-	email: localStorage.getItem("email"),
-	sendEmail: localStorage.getItem("novedades")
->>>>>>> 244a531d2ae5554bf45906a51420e0f14f859b50
 }
 console.log(perfil)
 fetch(url, {
         method: 'POST', // or 'PUT'
         body: JSON.stringify(perfil) // data can be `string` or {object}!
 
-<<<<<<< HEAD
     })
     .then(res => res.json())
     .catch(error => console.error('Error:', error))
     .then(response => console.log('Success:', response));
-=======
-const url_envio = "https://demo2420474.mockable.io/userData"
-const promesa_envio = new Promise((resolve,reject) => {
-	if(localStorage.getItem("nombre") !== "" || localStorage.getItem("email") !== "" || localStorage.getItem("novedades") !== false){
-		resolve() = true
-	} 
-})
-	/* fetch(url_envio)
-	.then ( response => response.text() ) */
->>>>>>> 244a531d2ae5554bf45906a51420e0f14f859b50
 
 
 

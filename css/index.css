@@ -124,7 +124,6 @@ width: max-content;
 
 .navbar-natt {
     padding-left: 60em;
-
 }
 
 /* DESPLEGABLE PARA PRODUCTOS */
@@ -143,20 +142,10 @@ width: max-content;
 
 /* Sweet alert */
 
-/* .swal2-input{
-    position: center;
-    margin-bottom: 30px;
+.SA-responsive{
+    display: flex;
+    flex-direction: column;
 }
-
-.swal2-popup{
-    border: solid 2px red;
-    
-}
-
-.swal2-content{
-    padding: 5px;
-    overflow: hidden
-} */
 
 
 /* MODIFICACIONES EN BARRA DE NAVEGACION DE ACUERDO A LAS PANTALLAS */

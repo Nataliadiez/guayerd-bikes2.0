@@ -14,9 +14,10 @@ if(localnombre === null || localmail === null) {
 			title: '¡Bienvenido!',
 			html:
 				
-				'<div class="container">'+
+				'<div class="SA-responsive">'+
 				'<label id="nombre-ingresado"> Ingrese su nombre </label>'+
 			  '<input type="text" id="swal-input1" class="swal2-input">' +
+			  '<div><br></div>'+
 			  '<label> Ingrese su email </label>'+
 			  '<input type="text" id="swal-input2" class="swal2-input">'+
 			  '<div><br></div>'+
@@ -64,9 +65,9 @@ console.log(localStorage.getItem("nombre"))
 
 let name = {
 	token: codToken,
-	name: localStorage.getItem("nombre").toString(),
-	email: localStorage.getItem("email").toString(),
-	sendEmail: localStorage.getItem("novedades").toString()
+	name: localStorage.getItem("nombre"),
+	email: localStorage.getItem("email"),
+	sendEmail: localStorage.getItem("novedades")
 }
 
 const url_envio = "https://demo2420474.mockable.io/userData"
@@ -75,8 +76,8 @@ const promesa_envio = new Promise((resolve,reject) => {
 		resolve() = true
 	} 
 })
-	fetch(url_envio)
-	.then ( response => response.text() )
+	/* fetch(url_envio)
+	.then ( response => response.text() ) */
 
 
 

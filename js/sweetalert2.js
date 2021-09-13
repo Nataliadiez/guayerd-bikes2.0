@@ -7,75 +7,77 @@ let localmail = localStorage.getItem("email")
 let localnovedades = localStorage.getItem("novedades")
 let checkboxForm;
 
-if(localnombre === null || localmail === null) {
-	const { value: formValues } = setTimeout(()=> {
-		Swal.fire({
-			title: '¡Bienvenido!',
-			html:
-				
-				'<div class="container">'+
-				'<label id="nombre-ingresado"> Ingrese su nombre </label>'+
-			  '<input type="text" id="swal-input1" class="swal2-input">' +
-			  '<label> Ingrese su email </label>'+
-			  '<input type="text" id="swal-input2" class="swal2-input">'+
-			  '<div><br></div>'+
-			  '<span><label> Deseo recibir novedades</label> <input type="checkbox" id="checkForm"></span> </div>',
-			   
-			confirmButtonText: 'Enviar',
-			width: "51%",
-			
-			backdrop: true,
-			allowOutsideClick: true,
-			allowEscapeKey: true,
-			allowEnterKey: true,
-	
-			preConfirm: () => {
-			  return [
-				checkboxForm = document.querySelector("#checkForm").checked,
-				nombreform = document.getElementById('swal-input1').value,
-				emailform = document.getElementById('swal-input2').value,
-				localStorage.setItem("nombre", nombreform),
-				localStorage.setItem("email", emailform),
-				localStorage.setItem("novedades", checkboxForm)
-				
-			  ]
-			  
-			}
-			
-		  })
-		  
-	},2000) 
+if (localnombre === null || localmail === null) {
+    const { value: formValues } = setTimeout(() => {
+        Swal.fire({
+            title: '¡Bienvenido!',
+            html:
+
+                '<div class="container">' +
+                '<label id="nombre-ingresado"> Ingrese su nombre </label>' +
+                '<input type="text" id="swal-input1" class="swal2-input">' +
+                '<label> Ingrese su email </label>' +
+                '<input type="text" id="swal-input2" class="swal2-input">' +
+                '<div><br></div>' +
+                '<span><label> Deseo recibir novedades</label> <input type="checkbox" id="checkForm"></span> </div>',
+
+            confirmButtonText: 'Enviar',
+            width: "51%",
+
+            backdrop: true,
+            allowOutsideClick: true,
+            allowEscapeKey: true,
+            allowEnterKey: true,
+
+            preConfirm: () => {
+                return [
+                    checkboxForm = document.querySelector("#checkForm").checked,
+                    nombreform = document.getElementById('swal-input1').value,
+                    emailform = document.getElementById('swal-input2').value,
+                    localStorage.setItem("nombre", nombreform),
+                    localStorage.setItem("email", emailform),
+                    localStorage.setItem("novedades", checkboxForm)
+
+                ]
+
+            }
+
+        })
+
+    }, 2000)
 }
 
 
 
 function random() {
-	return Math.random().toString(36).substr(2); // Eliminar `0.`
+    return Math.random().toString(36).substr(2); // Eliminar `0.`
 };
- 
+
 function token() {
-	return random() ; // Para hacer el token más largo
+    return random(); // Para hacer el token más largo
 };
 
 let codToken = token()
 
 console.log(localStorage.getItem("nombre"))
 
-let name = {
-	token: codToken,
-	name: localStorage.getItem("nombre").toString(),
-	email: localStorage.getItem("email").toString(),
-	sendEmail: localStorage.getItem("novedades").toString()
-}
 
-const url_envio = "https://demo2420474.mockable.io/userData"
-const promesa_envio = new Promise((resolve,reject) => {
-	if(localStorage.getItem("nombre") !== "" || localStorage.getItem("email") !== "" || localStorage.getItem("novedades") !== false){
-		resolve() = true
-	} 
-})
-	fetch(url_envio)
-	.then ( response => response.text() )
+var URL_1 = "https://demo2420474.mockable.io/userData";
+var perfil = {
+    token: codToken,
+    name: localStorage.getItem("nombre").toString(),
+    email: localStorage.getItem("email").toString(),
+    sendEmail: localStorage.getItem("novedades")
+}
+console.log(perfil)
+fetch(url, {
+        method: 'POST', // or 'PUT'
+        body: JSON.stringify(perfil) // data can be `string` or {object}!
+
+    })
+    .then(res => res.json())
+    .catch(error => console.error('Error:', error))
+    .then(response => console.log('Success:', response));
 
 
 
@@ -158,64 +160,60 @@ while (seguir) {
 
 //opciones
 // title:
-	// text:
-	// html:
-	// icon:
-	// confirmButtonText:
-	// footer:
-	// width:
-	// padding:
-	// background:
-	// grow:
-	// backdrop:
-	// timer:
-	// timerProgressBar:
-	// toast:
-	// position:
-	// allowOutsideClick:
-	// allowEscapeKey:
-	// allowEnterKey:
-	// stopKeydownPropagation:
+// text:
+// html:
+// icon:
+// confirmButtonText:
+// footer:
+// width:
+// padding:
+// background:
+// grow:
+// backdrop:
+// timer:
+// timerProgressBar:
+// toast:
+// position:
+// allowOutsideClick:
+// allowEscapeKey:
+// allowEnterKey:
+// stopKeydownPropagation:
 
-	// input:
-	// inputPlaceholder:
-	// inputValue:
-	// inputOptions:
-	
-	//  customClass:
-	// 	container:
-	// 	popup:
-	// 	header:
-	// 	title:
-	// 	closeButton:
-	// 	icon:
-	// 	image:
-	// 	content:
-	// 	input:
-	// 	actions:
-	// 	confirmButton:
-	// 	cancelButton:
-	// 	footer:	
+// input:
+// inputPlaceholder:
+// inputValue:
+// inputOptions:
 
-	// showConfirmButton:
-	// confirmButtonColor:
-	// confirmButtonAriaLabel:
+//  customClass:
+// 	container:
+// 	popup:
+// 	header:
+// 	title:
+// 	closeButton:
+// 	icon:
+// 	image:
+// 	content:
+// 	input:
+// 	actions:
+// 	confirmButton:
+// 	cancelButton:
+// 	footer:	
 
-	// showCancelButton:
-	// cancelButtonText:
-	// cancelButtonColor:
-	// cancelButtonAriaLabel:
-	
-	// buttonsStyling:
-	// showCloseButton:
-	// closeButtonAriaLabel:
+// showConfirmButton:
+// confirmButtonColor:
+// confirmButtonAriaLabel:
 
+// showCancelButton:
+// cancelButtonText:
+// cancelButtonColor:
+// cancelButtonAriaLabel:
 
-	// imageUrl:
-	// imageWidth:
-	// imageHeight:
-	// imageAlt:
+// buttonsStyling:
+// showCloseButton:
+// closeButtonAriaLabel:
 
 
-
-	 
+// imageUrl:
+// imageWidth:
+// imageHeight:
+// imageAlt:

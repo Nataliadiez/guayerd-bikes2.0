@@ -123,11 +123,14 @@ header{
  margin-top: -10px;
 }
 
+
 .nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: right;
     max-width: 992px;
     margin: 0 auto;
+    align-items: right;
+    
 }
 
 .nav-link {
@@ -135,10 +138,17 @@ header{
     text-decoration: none;
 }
 
-
-
 /* LOGO GUAYERD BIKES */
 
+#navbarSupportedContent{
+   justify-content: center;
+}
+
+#navbarSupportedContent ul li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 
 .navbar-brand {
     font-family: 'Oleo Script', serif;
@@ -149,30 +159,30 @@ header{
     line-height: 80px;
     align-items:center !important;
     color:#212C65 !important;
-    
+    margin-right: 35% ;
 }
+
+
 
 /* BARRA DE NAVEGACIÓN */
 .nav-menu {
     display: flex;
     margin-right: 40px;
     list-style: none;
-    
 }
 
 .nav-item {
-font-size: 17px;
-margin: 0 10px;
-line-height: 80px;
-font-weight: 800;
-letter-spacing: 0.025em;
-width: max-content;
-
-}
-
-.navbar-natt {
-    padding-left: 60em;
+    font-size: 17px;
+    margin: 0 10px;
+    line-height: 80px;
+    font-weight: 800;
+    letter-spacing: 0.025em;
+    width: max-content;
     
+    }
+
+#icono-carrito{
+    color:#212C65 !important;
 }
 
 
@@ -195,156 +205,30 @@ width: max-content;
 
 
 /* MODIFICACIONES EN BARRA DE NAVEGACION DE ACUERDO A LAS PANTALLAS */
-@media (max-width: 1700px) {
-
-
-    .navbar-natt {
-        padding-left: 58em;
-        
-    }
-    
-}
-
-@media (max-width: 1600px) {
-
-
-    .navbar-natt {
-        padding-left: 55em;
-        
-    }
-    
-}
-
-@media (max-width: 1550px) {
-
-
-    .navbar-natt {
-        padding-left: 52em;
-        
-    }
-    
-}
-
-@media (max-width: 1500px) {
-
-
-    .navbar-natt {
-        padding-left: 50em;
-        
-    }
-    
-}
-
-@media (max-width: 1450px) {
-
-
-    .navbar-natt {
-        padding-left: 42em;
-        
-    }
-    
-}
-
 @media (max-width: 1400px) {
-
-
-    .navbar-natt {
-        padding-left: 40em;
-        
+    .navbar-brand {
+        margin-right: 30%;
     }
-    
 }
 
-@media (max-width: 1350px) {
-
-
-    .navbar-natt {
-        padding-left: 38em;
-        
+@media (max-width: 1190px) {
+    .navbar-brand {
+        margin-right: 25%;
     }
-    
 }
 
-@media (max-width: 1300px) {
 
-
-    .navbar-natt {
-        padding-left: 36em;
-        
+@media (max-width: 1115px) {
+    .navbar-brand {
+        margin-right: 20%;
     }
-    
 }
 
-@media (max-width: 1255px) {
-
-
-    .navbar-natt {
-        padding-left: 34em;
-        
+@media (max-width: 1047px) {
+    .navbar-brand {
+        margin-right: 15%;
     }
-    
 }
-
-@media (max-width: 1200px) {
-
-
-    .navbar-natt {
-        padding-left: 32em;
-        
-    }
-    
-}
-
-@media (max-width: 1170px) {
-
-
-    .navbar-natt {
-        padding-left: 28em;
-        
-    }
-    
-}
-
-@media (max-width: 1129px) {
-
-
-    .navbar-natt {
-        padding-left: 26em;
-        
-    }
-    
-}
-
-@media (max-width: 1093px) {
-
-
-    .navbar-natt {
-        padding-left: 23em;
-        
-    }
-    
-}
-
-@media (max-width: 1055px) {
-
-
-    .navbar-natt {
-        padding-left: 20em;
-        
-    }
-    
-}
-
-@media (max-width: 1024px) {
-
-
-    .navbar-natt {
-        padding-left: 18em;
-        
-    }
-    
-}
-
 
 @media (max-width: 992px) {
 
@@ -357,10 +241,10 @@ width: max-content;
     
 
     .navbar-natt {
-        padding-left: 5em;
         align-items: center !important;
         
     }
+
     
 }
 
@@ -378,10 +262,23 @@ width: max-content;
     }
     
 
-    .navbar-natt {
-        padding-left: 2em;
-        
+}
+
+@media (max-width: 800px) {
+
+    body {
+        padding-top: 70px;
     }
+    
+    /* BARRA DE NAVEGACIÓN */
+    .header {
+        height: 20px !important;
+    }
+    
+    .navbar-natt {
+        position: relative;
+    }
+    
     
 }
 
@@ -398,8 +295,7 @@ width: max-content;
         height: 20px !important;
 		
     }
-    
-    
+
     .navbar-brand {
         
         font-weight: 500 !important;
@@ -409,15 +305,7 @@ width: max-content;
         line-height: 60px !important;
         
     }
-    
-    .navbar-natt {
-        padding-left: 2em;
-        
-    }
-    
 }
-
-
 
 /* Logo Guayerd */
 
@@ -431,21 +319,6 @@ width: max-content;
 }
 
 
-/* Descripción del HOME */
-
-#descripcion-del-sitio {
-    padding-top: 50px;
-    display: flex;
-    flex-direction: column;
-    color: #000000;
-    font-size: 100px !important;
-    line-height: 0.8cm;
-    padding-bottom: 40px;
-    text-align: justify;
-    font-size: 0.8em !important;
-    width: 90% !important;
-    margin: 0 auto !important;
-}
 
 /* FOOTER */
 
@@ -454,8 +327,6 @@ width: max-content;
     color: #212C65  !important;
     border: 0 !important;
     font-size: 1.7em !important;
-    /* #212C65 
-    #01a1dd */
     
 }
 

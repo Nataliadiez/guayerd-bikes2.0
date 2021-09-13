@@ -67,9 +67,10 @@ header{
 
 .nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: right;
     max-width: 992px;
     margin: 0 auto;
+    align-items: right;
     
 }
 
@@ -78,9 +79,17 @@ header{
     text-decoration: none;
 }
 
-
 /* LOGO GUAYERD BIKES */
 
+#navbarSupportedContent{
+   justify-content: center;
+}
+
+#navbarSupportedContent ul li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 
 .navbar-brand {
     font-family: 'Oleo Script', serif;
@@ -91,7 +100,7 @@ header{
     line-height: 80px;
     align-items:center !important;
     color:#212C65 !important;
-    
+    margin-right: 35%;
 }
 
 
@@ -113,23 +122,23 @@ header{
     
     }
 
-
-.navbar-natt {
-    padding-left: 60em;
+#icono-carrito{
+    color:#212C65 !important;
+    font-size: 120%;
 }
+
+
 
 /* DESPLEGABLE PARA PRODUCTOS */
 
 .dropdown-menu {
-    width: 20px !important;
-    
+    width: auto !important;
 }
 
 .dropdown-item {
     font-family: sans-serif !important;
     height: 1.5em;
     line-height: 20px;
-    
 }
 
 /* Sweet alert */
@@ -141,156 +150,29 @@ header{
 
 
 /* MODIFICACIONES EN BARRA DE NAVEGACION DE ACUERDO A LAS PANTALLAS */
-@media (max-width: 1700px) {
-
-    .navbar-natt {
-        padding-left: 58em;
-        
-    }
-    
-}
-
-@media (max-width: 1600px) {
-
-
-    .navbar-natt {
-        padding-left: 55em;
-        
-    }
-    
-}
-
-@media (max-width: 1550px) {
-
-
-    .navbar-natt {
-        padding-left: 52em;
-        
-    }
-    
-}
-
-@media (max-width: 1500px) {
-
-
-    .navbar-natt {
-        padding-left: 50em;
-        
-    }
-    
-}
-
-@media (max-width: 1450px) {
-
-
-    .navbar-natt {
-        padding-left: 42em;
-        
-    }
-    
-}
-
 @media (max-width: 1400px) {
-
-
-    .navbar-natt {
-        padding-left: 40em;
-        
+    .navbar-brand {
+        margin-right: 30%;
     }
-    
 }
 
-@media (max-width: 1350px) {
-
-
-    .navbar-natt {
-        padding-left: 38em;
-        
+@media (max-width: 1190px) {
+    .navbar-brand {
+        margin-right: 25%;
     }
-    
 }
 
-@media (max-width: 1300px) {
 
-
-    .navbar-natt {
-        padding-left: 36em;
-        
+@media (max-width: 1115px) {
+    .navbar-brand {
+        margin-right: 20%;
     }
-    
 }
 
-@media (max-width: 1255px) {
-
-
-    .navbar-natt {
-        padding-left: 34em;
-        
+@media (max-width: 1047px) {
+    .navbar-brand {
+        margin-right: 15%;
     }
-    
-}
-
-@media (max-width: 1200px) {
-
-
-    .navbar-natt {
-        padding-left: 32em;
-        
-    }
-
-}
-
-@media (max-width: 1170px) {
-
-
-    .navbar-natt {
-        padding-left: 28em;
-        
-    }
-    
-    
-}
-
-@media (max-width: 1129px) {
-
-
-    .navbar-natt {
-        padding-left: 26em;
-        
-    }
-    
-}
-
-@media (max-width: 1093px) {
-
-
-    .navbar-natt {
-        padding-left: 23em;
-        
-    }
-   
-    
-}
-
-@media (max-width: 1055px) {
-
-
-    .navbar-natt {
-        padding-left: 20em;
-        
-    }
-   
-    
-}
-
-@media (max-width: 1024px) {
-
-
-    .navbar-natt {
-        padding-left: 18em;
-        
-    }
-    
 }
 
 @media (max-width: 992px) {
@@ -304,7 +186,6 @@ header{
     
 
     .navbar-natt {
-        padding-left: 5em;
         align-items: center !important;
         
     }
@@ -326,11 +207,6 @@ header{
     }
     
 
-    .navbar-natt {
-        padding-left: 2em;
-        
-    }
-    
 }
 
 @media (max-width: 800px) {
@@ -345,7 +221,6 @@ header{
     }
     
     .navbar-natt {
-        padding-left: 2em;
         position: relative;
     }
     
@@ -374,11 +249,6 @@ header{
         letter-spacing: 0.05em !important;
         padding: 0 20px !important;
         line-height: 60px !important;
-        
-    }
-    
-    .navbar-natt {
-        padding-left: 2em;
         
     }
     

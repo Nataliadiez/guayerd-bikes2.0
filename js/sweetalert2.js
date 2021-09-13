@@ -67,8 +67,8 @@ console.log(localStorage.getItem("nombre"))
 var URL_1 = "https://demo2420474.mockable.io/userData";
 var perfil = {
     token: codToken,
-    name: localStorage.getItem("nombre").toString(),
-    email: localStorage.getItem("email").toString(),
+    name: localStorage.getItem("nombre"),
+    email: localStorage.getItem("email"),
     sendEmail: localStorage.getItem("novedades")
 }
 console.log(perfil)

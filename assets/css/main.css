@@ -117,8 +117,10 @@ p {
     left: 0;
 }
 
-header {
-    z-index: 10000;
+header{
+ position: relative;
+ z-index: 10000;
+ margin-top: -10px;
 }
 
 .nav {
@@ -167,8 +169,6 @@ letter-spacing: 0.025em;
 width: max-content;
 
 }
-
-
 
 .navbar-natt {
     padding-left: 60em;

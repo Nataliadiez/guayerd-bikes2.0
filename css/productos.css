@@ -88,9 +88,21 @@
     
 }
 
+@media (max-width: 965px) {
+    .card{
+        width: 40% !important;
+    }
+
+    #boton-comprar {
+        width: 40%;
+        font-size: 80%;
+    }
+    
+}
+
 @media (max-width: 890px) {
     .card{
-        width: 30% !important;
+        width: 40% !important;
     }
 
     #boton-comprar {
@@ -102,7 +114,7 @@
 
 @media (max-width: 815px) {
     .card{
-        width: 30% !important;
+        width: 45% !important;
     }
 
     #boton-comprar {
@@ -114,7 +126,7 @@
 
 @media (max-width: 750px) {
     .card{
-        width: 30% !important;
+        width: 45% !important;
     }
 
     #boton-comprar {
@@ -126,7 +138,7 @@
 
 @media (max-width: 691px) {
     .card{
-        width: 30% !important;
+        width: 47% !important;
     }
 
     #boton-comprar {

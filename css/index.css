@@ -61,6 +61,7 @@ p {
 header{
  position: relative;
  z-index: 10000;
+ margin-top: -10px;
 }
 
 
@@ -93,16 +94,7 @@ header{
     
 }
 
-/* #img-logoguayerd{
-    border: solid 2px red;
-    width: 90% !important;
-    
-}
 
-#img_banner{
-    border: solid 2px blue;
-    width: 120% !important;
-} */
 
 /* BARRA DE NAVEGACIÓN */
 .nav-menu {
@@ -112,14 +104,14 @@ header{
 }
 
 .nav-item {
-font-size: 17px;
-margin: 0 10px;
-line-height: 80px;
-font-weight: 800;
-letter-spacing: 0.025em;
-width: max-content;
-
-}
+    font-size: 17px;
+    margin: 0 10px;
+    line-height: 80px;
+    font-weight: 800;
+    letter-spacing: 0.025em;
+    width: max-content;
+    
+    }
 
 
 .navbar-natt {

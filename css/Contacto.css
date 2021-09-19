@@ -2,9 +2,13 @@
     background-color: #ccc;
 }
 
+#seccion-mapa{
+    margin-top: 7%;
+}
 
 .mapa {
     margin: auto !important;
+    border-radius: 40px;
 }
 
 #formulario-completo #formulario{
@@ -105,6 +109,9 @@
         
 }
     
+#formulario #error-formulario-vacio {
+    margin: auto;
+}
    
 /* @media (max-width: 1260px) {
     #formulario-completo #formulario{

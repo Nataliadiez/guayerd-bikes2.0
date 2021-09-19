@@ -24,6 +24,7 @@ if (localnombre === null || localmail === null) {
                 '<span><label> Deseo recibir novedades</label> <input type="checkbox" id="checkForm"></span> </div>',
 
             confirmButtonText: 'Enviar',
+            confirmButtonColor: 'darkblue',
             width: "51%",
 
             backdrop: true,

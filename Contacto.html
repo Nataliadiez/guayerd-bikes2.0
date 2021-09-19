@@ -98,97 +98,85 @@
     </div>
     <!-- formulario de contacto en html y css submeter-formulario.php-->
 
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-2"></div>
-            <div class="col-sm-8">
-                <form class="titulos" action="" id="formulario" method="post">
-
-
-                    <div class="mb-3">
-                        <label for="nombre" class="colocar_nombre" id="colocar_el_nombre">Nombre
-                            <span class="obligatorio"></span>
-                        </label>
-
-                        <input type="text" name="nombre" id="nombre" required="obligatorio"
-                            placeholder="Escribe tu nombre">
-                        <span id="error_name" class="errores"></span>
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="email" class="colocar_email">Email
-                            <span class="obligatorio"></span>
-                        </label>
-                        <input type="email" name="email" id="email" required="obligatorio"
-                            placeholder="Escribe tu Email">
-                        <span id="error_email" class="errores"></span>
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="telefono" class="colocar_telefono">Teléfono
-                            <span class="obligatorio"></span>
-                        </label>
-                        <input type="number" name="telefono" id="telefono" required="obligatorio"
-                            placeholder="    Escribe tu telefono">
-                        <span id="error_tel" class="errores"></span>
-                    </div>
-
-
-                    <div class="mb-3">
-                        <label for="asunto" class="colocar_asunto">Asunto
-                            <span class="obligatorio"></span>
-                        </label>
-                        <select>
-
-                            <option>Venta</option>
-
-                            <option>Trabajo</option>
-
-                            <option>Reparación</option>
-                            <option>Presupuesto</option>
-                            <option>Reclamo</option>
-
-
-                        </select>
-
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="mensaje" class="colocar_mensaje">Mensaje
-                            <span class="obligatorio"></span>
-                        </label>
-                        <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio"
-                            placeholder="Deja aquí tu comentario..." onblur="validarMensaje()"></textarea>
-                        <span id="error_mensaje" class="errores"></span>
-                    </div>
-
-                    <div class="mb-3">
-                        <p id="error-formulario-vacio"></p>
-                    </div>
-                    
-                    <div class="mb-3" id="div-boton">
-                        <button class="boton colorBoton formaBoton" class="btn btn-primary" type="button"
-                            onclick="envio()" name="enviar_formulario" id="enviar">
-                            Enviar
-                        </button>
-                    </div>
-
-                </form>
-            </div>
-            <div class="col-sm-2"></div>
-        </div>
-    </div>
-
-
-
     <div class = "container" id="formulario-completo">
-        
+        <form class="titulos" action="" id="formulario" method="post">
+
+
+            <div class="mb-3">
+                <label for="nombre" class="colocar_nombre" id="colocar_el_nombre">Nombre
+                    <span class="obligatorio"></span>
+                </label>
+
+                <input type="text" name="nombre" id="nombre" required="obligatorio"
+                    placeholder="Escribe tu nombre">
+                <span id="error_name" class="errores"></span>
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="colocar_email">Email
+                    <span class="obligatorio"></span>
+                </label>
+                <input type="email" name="email" id="email" required="obligatorio"
+                    placeholder="Escribe tu Email">
+                <span id="error_email" class="errores"></span>
+            </div>
+
+            <div class="mb-3">
+                <label for="telefono" class="colocar_telefono">Teléfono
+                    <span class="obligatorio"></span>
+                </label>
+                <input type="number" name="telefono" id="telefono" required="obligatorio"
+                    placeholder="    Escribe tu telefono">
+                <span id="error_tel" class="errores"></span>
+            </div>
+
+
+            <div class="mb-3">
+                <label for="asunto" class="colocar_asunto">Asunto
+                    <span class="obligatorio"></span>
+                </label>
+                <select>
+
+                    <option>Venta</option>
+
+                    <option>Trabajo</option>
+
+                    <option>Reparación</option>
+                    <option>Presupuesto</option>
+                    <option>Reclamo</option>
+
+
+                </select>
+
+            </div>
+
+            <div class="mb-3">
+                <label for="mensaje" class="colocar_mensaje">Mensaje
+                    <span class="obligatorio"></span>
+                </label>
+                <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio"
+                    placeholder="Deja aquí tu comentario..." onblur="validarMensaje()"></textarea>
+                <span id="error_mensaje" class="errores"></span>
+            </div>
+
+            <div class="mb-3">
+                <p id="error-formulario-vacio"></p>
+            </div>
+            
+            <div class="mb-3" id="div-boton">
+                <button class="boton colorBoton formaBoton" class="btn btn-primary" type="button"
+                    onclick="envio()" name="enviar_formulario" id="enviar">
+                    Enviar
+                </button>
+            </div>
+
+        </form>
                 
             
     </div>  
 
     
-        <div class="container">
+        <div class="container" id="seccion-mapa">
             <div class="text-center">
                 <h2 class="titulos-home">Ubicación</h2>
 
@@ -199,7 +187,8 @@
                         class="img-fluid img-responsive"></iframe>
 
                 </div>
-                <h2>Avenida Corrientes 6237, CABA</h2>
+                <br>
+                <h4>Avenida Corrientes 6237, CABA</h4>
                 <!--<p>INSERTAR MAPA AQUÍ</p>-->
             </div>
         </div>

@@ -151,6 +151,10 @@ header{
 
 #carouselExampleCaptions{
     margin-top: -1%;
+    display: flex;
+    justify-content: center;
+    margin-left: -2%;
+    margin-right: -2%;
 }
 /* Carrito inicio */
 .shopping-cart-image{
@@ -282,6 +286,12 @@ header{
         height: 20px !important;
 		
     }
+
+    #carouselExampleCaptions{
+        margin-top: -2%;
+        margin-left: -3%;
+        margin-right: -3%;
+    }
     
     
     .navbar-brand {
@@ -339,9 +349,8 @@ header{
 }
 
 
-.fila {
-    border: 2px solid #000000;
-    padding: 5px 5px 20px 20px;
+table{
+    width: 30% !important;
 }
 
 

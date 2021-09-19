@@ -11,6 +11,20 @@
     margin-bottom: 5%;
     border-radius: 20px;
     width: 30% !important;
+    height: 20%;
+}
+
+.card-img-top{
+    width: 80%;
+    margin: auto;
+}
+
+#casco-1{
+    width: 85% !important;
+}
+
+#casco-3{
+    width: 69%;
 }
 
 #mostrar{
@@ -29,6 +43,7 @@
     border: solid 2px rgb(12, 9, 49);
     width: 30%;
     font-size: 80%;
+    margin-bottom: 4%;
 }
 
 #boton-comprar:hover{
@@ -51,6 +66,7 @@
     justify-content: center;
     align-content: center;
     align-items: center;
+    margin-bottom: -5%;
 }
 
 .card .card-body p{

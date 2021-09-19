@@ -51,7 +51,7 @@ const envio = ()=>{
             icon: "success"
        })},1000)
    } 
-   ,3000)  
+   ,1000)  
 
    const datos =new XMLHttpRequest()
    const url =`https://demo2420474.mockable.io/submitForm`
